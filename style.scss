@@ -7,7 +7,6 @@
 
 @import "reset";
 @import "variables";
-@import "custom";
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -153,6 +152,9 @@ img {
 
 .wrapper-masthead {
   margin-bottom: 50px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: $lightGray;
 }
 
 .masthead {
@@ -286,5 +288,6 @@ footer {
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+@import "custom";
 @import "highlights";
 @import "svg-icons";
