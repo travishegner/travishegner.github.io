@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<ul>
+{% for post in site.posts %}
+	{% assign tyear = post.date | date: "%Y" %}
+	{% if tyear != lyear %}
+		{% if lyear %}
+	</ul></li>
+		{% endif %}
+		<li>{{tyear}}<ul class="year">
+		<li><a href="{{post.url}}">{{post.title}}</a></li>
+	{% else %}
+		<li><a href="{{post.url}}">{{post.title}}</a></li>
+	{% endif %}
+	{% assign lyear = tyear %}
+{% endfor %}
+</ul>
