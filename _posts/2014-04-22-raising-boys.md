@@ -10,4 +10,4 @@ categories:
   - Random
   - Thought of the day
 ---
-<img src="/images/CoatHanger.png" alt="#raisingboys" width="1280" height="800" />
+<img src="/images/CoatHanger.png" alt="#raisingboys" />
