@@ -17,11 +17,7 @@ layout: default
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
 
-	<div class="browse">
-		<span class="prev"><a href="{{ page.previous.url }}"><-- Previous</a></span>
-		<span class="all"><a href="/all-posts/">All Posts</a></span>
-		<span class="next"><a href="{{ page.previous.url }}">Next --></a></span>
-	</div>
+	{% include browse.html %}
 
   {% include disqus.html %}
 </article>
