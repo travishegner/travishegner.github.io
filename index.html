@@ -17,7 +17,9 @@ layout: default
     Written on {{ site.posts[0].date | date: "%B %e, %Y" }}
   </div>
 
-	{% include browse.html prevurl=site.posts[0].previous.url %}
+	{% assign prevurl = site.posts[0].previous.url %}
+	{% assign nexturl = site.posts[0].next.url %}
+	{% include browse.html %}
 
   {% include disqus.html %}
 </article>
