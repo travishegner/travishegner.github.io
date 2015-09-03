@@ -1,4 +1,4 @@
-<span class="browse">
+<div class="browse">
   {% if prevurl %}
     <span class="prev"><a href="{{ prevurl }}"><-- Previous</a></span>
   {% else if page.previous.url %} 
@@ -10,4 +10,4 @@
   {% else if page.next.url %}
     <span class="next"><a href="{{ page.next.url }}">Next --></a></span>
   {% endif %}
-</span>
+</div>
