@@ -1,6 +1,6 @@
 <div class="browse">
-	{% if page.previous %}
-  <span class="prev"><a href="{{ page.previous.url }}"><-- Previous</a></span>
+	{% if prevurl %}
+  <span class="prev"><a href="{{ prevurl }}"><-- Previous</a></span>
 	{% endif %}
   <span class="all"><a href="/all-posts/">All Posts</a></span>
 	{% if page.next %}
