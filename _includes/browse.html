@@ -1,5 +1,9 @@
 <div class="browse">
+	{% if page.previous %}
   <span class="prev"><a href="{{ page.previous.url }}"><-- Previous</a></span>
+	{% endif %}
   <span class="all"><a href="/all-posts/">All Posts</a></span>
-  <span class="next"><a href="{{ page.previous.url }}">Next --></a></span>
+	{% if page.next %}
+  <span class="next"><a href="{{ page.next.url }}">Next --></a></span>
+	{% endif %}
 </div>
