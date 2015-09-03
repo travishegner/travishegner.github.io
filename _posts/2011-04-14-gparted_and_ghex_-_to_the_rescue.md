@@ -2,7 +2,7 @@
 title: 'gparted, dd, and ghex2 &#8211; <del>Oh My!</del> To The Rescue!'
 author: travis.hegner
 layout: post
-permalink: /2011/04/gparted_and_ghex_-_to_the_rescue/
+redirect_from: /2011/04/gparted_and_ghex_-_to_the_rescue/
 dsq_thread_id:
   - 2149845132
 categories:

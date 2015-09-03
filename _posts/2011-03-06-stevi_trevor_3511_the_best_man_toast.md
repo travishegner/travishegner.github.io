@@ -2,7 +2,7 @@
 title: 'Stevi &#038; Trevor 3/5/11 The Best Man Toast'
 author: travis.hegner
 layout: post
-permalink: /2011/03/stevi_trevor_3511_the_best_man_toast/
+redirect_from: /2011/03/stevi_trevor_3511_the_best_man_toast/
 dsq_thread_id:
   - 2149845244
 categories:

@@ -2,7 +2,7 @@
 title: 'You did WHAT with iptables? (Part 4: The &#8220;Revert to old behavior&#8221; Solution)'
 author: travis.hegner
 layout: post
-permalink: /2015/04/you-did-what-with-iptables-part-4-the-revert-to-old-behavior-solution/
+redirect_from: /2015/04/you-did-what-with-iptables-part-4-the-revert-to-old-behavior-solution/
 categories:
   - I.T.
 ---

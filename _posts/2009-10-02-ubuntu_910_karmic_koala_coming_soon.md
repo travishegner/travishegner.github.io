@@ -2,7 +2,7 @@
 title: Ubuntu 9.10 Karmic Koala Coming Soon!
 author: travis.hegner
 layout: post
-permalink: /2009/10/ubuntu_910_karmic_koala_coming_soon/
+redirect_from: /2009/10/ubuntu_910_karmic_koala_coming_soon/
 dsq_thread_id:
   - 2149845536
 categories:

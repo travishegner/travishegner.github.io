@@ -2,7 +2,7 @@
 title: 'You did WHAT with iptables? (Part 1: The Problem)'
 author: travis.hegner
 layout: post
-permalink: /2014/01/you-did-what-with-iptables-part-1-the-problem/
+redirect_from: /2014/01/you-did-what-with-iptables-part-1-the-problem/
 dsq_thread_id:
   - 2149817347
 categories:

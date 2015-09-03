@@ -2,7 +2,7 @@
 title: Governmental Rules
 author: travis.hegner
 layout: post
-permalink: /2013/01/governmental-rules/
+redirect_from: /2013/01/governmental-rules/
 categories:
   - Thought of the day
 ---

@@ -2,7 +2,7 @@
 title: Installing Software on Old Ubuntu Installs
 author: travis.hegner
 layout: post
-permalink: /2012/03/installing-software-on-old-ubuntu-installs/
+redirect_from: /2012/03/installing-software-on-old-ubuntu-installs/
 dsq_thread_id:
   - 2149842087
 categories:

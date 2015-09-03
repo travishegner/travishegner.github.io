@@ -2,7 +2,7 @@
 title: The Business-ification of I.T.
 author: travis.hegner
 layout: post
-permalink: /2012/02/the-business-ification-of-i-t/
+redirect_from: /2012/02/the-business-ification-of-i-t/
 dsq_thread_id:
   - 2149844927
 categories:

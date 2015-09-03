@@ -2,7 +2,7 @@
 title: Raising Boys
 author: travis.hegner
 layout: post
-permalink: /2014/04/raising-boys/
+redirect_from: /2014/04/raising-boys/
 dsq_thread_id:
   - 2631046413
 categories:

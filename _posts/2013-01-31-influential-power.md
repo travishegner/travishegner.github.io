@@ -2,7 +2,7 @@
 title: Influential Power
 author: travis.hegner
 layout: post
-permalink: /2013/01/influential-power/
+redirect_from: /2013/01/influential-power/
 categories:
   - Thought of the day
 ---

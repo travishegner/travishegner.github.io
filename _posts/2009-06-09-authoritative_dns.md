@@ -2,7 +2,7 @@
 title: Authoritative DNS
 author: travis.hegner
 layout: post
-permalink: /2009/06/authoritative_dns/
+redirect_from: /2009/06/authoritative_dns/
 dsq_thread_id:
   - 2149846177
 categories:

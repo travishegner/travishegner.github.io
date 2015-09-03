@@ -2,7 +2,7 @@
 title: PostgreSQL 8.3 Warm Stand-by Replication
 author: travis.hegner
 layout: post
-permalink: /2009/06/postgresql_83_warm_stand-by_replication/
+redirect_from: /2009/06/postgresql_83_warm_stand-by_replication/
 dsq_thread_id:
   - 2149846364
 categories:

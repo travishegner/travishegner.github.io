@@ -2,7 +2,7 @@
 title: 'Every Parent&#8217;s Worst Fear'
 author: travis.hegner
 layout: post
-permalink: /2013/10/every-parents-worst-fear/
+redirect_from: /2013/10/every-parents-worst-fear/
 dsq_thread_id:
   - 2160001172
 categories:

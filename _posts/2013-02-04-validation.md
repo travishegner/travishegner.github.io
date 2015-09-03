@@ -2,7 +2,7 @@
 title: Validation
 author: travis.hegner
 layout: post
-permalink: /2013/02/validation/
+redirect_from: /2013/02/validation/
 categories:
   - Thought of the day
 ---

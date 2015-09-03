@@ -2,7 +2,7 @@
 title: We Got Reddited
 author: travis.hegner
 layout: post
-permalink: /2015/03/we-got-reddited/
+redirect_from: /2015/03/we-got-reddited/
 dsq_thread_id:
   - 3589792354
 categories:

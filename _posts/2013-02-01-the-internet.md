@@ -2,7 +2,7 @@
 title: The Internet
 author: travis.hegner
 layout: post
-permalink: /2013/02/the-internet/
+redirect_from: /2013/02/the-internet/
 dsq_thread_id:
   - 2186602162
 categories:

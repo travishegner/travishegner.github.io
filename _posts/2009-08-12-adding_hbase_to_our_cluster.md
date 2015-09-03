@@ -2,7 +2,7 @@
 title: Adding Hbase 0.20 to Our Hadoop Cluster
 author: travis.hegner
 layout: post
-permalink: /2009/08/adding_hbase_to_our_cluster/
+redirect_from: /2009/08/adding_hbase_to_our_cluster/
 dsq_thread_id:
   - 2149845783
 categories:

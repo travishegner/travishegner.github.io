@@ -2,7 +2,7 @@
 title: Hadoop 0.20 on Ubuntu Server 9.04 Jaunty
 author: travis.hegner
 layout: post
-permalink: /2009/06/hadoop_020_on_ubuntu_server_904_jaunty/
+redirect_from: /2009/06/hadoop_020_on_ubuntu_server_904_jaunty/
 dsq_thread_id:
   - 2149846028
 categories:

@@ -2,7 +2,7 @@
 title: 'You did WHAT with iptables? (Part 3: The Actual Solution)'
 author: travis.hegner
 layout: post
-permalink: /2014/01/you-did-what-with-iptables-part-3-the-actual-solution/
+redirect_from: /2014/01/you-did-what-with-iptables-part-3-the-actual-solution/
 dsq_thread_id:
   - 2149814923
 categories:

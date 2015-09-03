@@ -2,7 +2,7 @@
 title: 'Hbase 0.20: Low Memory Performance Tuning'
 author: travis.hegner
 layout: post
-permalink: /2009/11/hbase_020_low_memory_performance_tuning/
+redirect_from: /2009/11/hbase_020_low_memory_performance_tuning/
 dsq_thread_id:
   - 2149845355
 categories:

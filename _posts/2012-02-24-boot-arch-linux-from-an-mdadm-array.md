@@ -2,7 +2,7 @@
 title: Boot Arch Linux from an mdadm array
 author: travis.hegner
 layout: post
-permalink: /2012/02/boot-arch-linux-from-an-mdadm-array/
+redirect_from: /2012/02/boot-arch-linux-from-an-mdadm-array/
 dsq_thread_id:
   - 2149845049
 categories:

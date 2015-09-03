@@ -2,7 +2,7 @@
 title: 'Ubuntu Server 9.04 Jaunty: open-vm modules fail to build'
 author: travis.hegner
 layout: post
-permalink: /2009/05/ubuntu_server_904_jaunty_open-vm_modules_fail_to_build/
+redirect_from: /2009/05/ubuntu_server_904_jaunty_open-vm_modules_fail_to_build/
 dsq_thread_id:
   - 2149846527
 categories:

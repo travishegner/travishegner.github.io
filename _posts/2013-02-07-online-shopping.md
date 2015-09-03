@@ -2,7 +2,7 @@
 title: Online Shopping
 author: travis.hegner
 layout: post
-permalink: /2013/02/online-shopping/
+redirect_from: /2013/02/online-shopping/
 dsq_thread_id:
   - 2235130749
 categories:
