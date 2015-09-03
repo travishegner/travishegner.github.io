@@ -18,7 +18,8 @@ layout: default
   </div>
 
 	<div class="browse">
-		<pre>{{ page.previous }}</pre>
+		<pre>{{ page.next.url }}</pre>
+		<span class="prev"><a href="{{ page.previous.url }}"><-- Previous</a></span>
 	</div>
 
   {% include disqus.html %}
