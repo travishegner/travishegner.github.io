@@ -8,7 +8,7 @@ categories:
 ---
 Dear Government,
 
-Creating more rules to stop people who don&#8217;t follow existing rules is not going to work.
+Creating more rules to stop people who don't follow existing rules is not going to work.
 
 Sincerely,
 

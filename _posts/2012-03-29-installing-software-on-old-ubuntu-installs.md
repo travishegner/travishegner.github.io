@@ -10,7 +10,7 @@ categories:
   - Tutorials
   - Ubuntu
 ---
-Have an old Ubuntu server or desktop and can&#8217;t access the repositories? Getting messages like:
+Have an old Ubuntu server or desktop and can't access the repositories? Getting messages like:
 
 <pre>Err http://us.archive.ubuntu.com karmic-updates/main Packages
   404  Not Found [IP: 91.189.92.181 80]</pre>

@@ -8,7 +8,7 @@ categories:
 ---
 Dear Fellow Christians,
 
-If you more often use the bible for *validation* or *justification*, rather than *motivation* or *inspiration*; you&#8217;re doing it wrong.
+If you more often use the bible for *validation* or *justification*, rather than *motivation* or *inspiration*; you're doing it wrong.
 
 Sincerely,
 

@@ -1,5 +1,5 @@
 ---
-title: 'You did WHAT with iptables? (Part 4: The &#8220;Revert to old behavior&#8221; Solution)'
+title: 'You did WHAT with iptables? (Part 4: The "Revert to old behavior" Solution)'
 author: travis.hegner
 layout: post
 redirect_from: /2015/04/you-did-what-with-iptables-part-4-the-revert-to-old-behavior-solution/
@@ -10,6 +10,6 @@ I was conferring with <a href="http://clinta.github.io" target="_blank">my newes
 
 <a href="https://supportforums.cisco.com/discussion/11890741/unicast-ucm-music-hold-fails-through-cube-asr" target="_blank">https://supportforums.cisco.com/discussion/11890741/unicast-ucm-music-hold-fails-through-cube-asr</a>
 
-Turns out, they did put in a &#8220;revert to old behavior&#8221; option. It&#8217;s called &#8220;Duplex Streaming Enabled&#8221;.
+Turns out, they did put in a "revert to old behavior" option. It's called "Duplex Streaming Enabled".
 
 Needless to say, that works much better than what I was doing.

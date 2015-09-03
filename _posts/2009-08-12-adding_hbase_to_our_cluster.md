@@ -10,13 +10,13 @@ categories:
   - I.T.
   - Tutorials
 ---
-OK, OK, I know what you&#8217;re thinking. &#8220;Where has this guy been with some more of this hadoop goodness that we just can&#8217;t get enough of?&#8221; Well, I am (finally) back, and you&#8217;ll be happy to learn what I brought with me: A whole mess more Hadoop and Hbase knowledge that I can&#8217;t wait to show you!
+OK, OK, I know what you're thinking. "Where has this guy been with some more of this hadoop goodness that we just can't get enough of?" Well, I am (finally) back, and you'll be happy to learn what I brought with me: A whole mess more Hadoop and Hbase knowledge that I can't wait to show you!
 
 Nevertheless, the time has finally come. The brilliant developers over at [Hbase][1] have made a release candidate for version 0.20 available for [download][2]. I believe that the changes have slowed enough to document the installation procedures a bit. The link is for RC1, but be on the lookout for RC2, which should be available very soon. I will document the procedures for both downloading the pre-built package, and installing from svn.
 
 First, I am going to recommend you follow my [hadoop tutorial][3], because the power of Hbase only really begins to shine when you have it installed fully distributed on a cluster.
 
-Please make a note that in order to get Hbase running with some real stability, I was forced to upgrade my cluster a bit. First, I moved my master onto a virtual machine, so that it was off of the &#8220;workhorse&#8221; nodes, and on a more redundant set of &#8220;hardware&#8221;. Effectively, this gave me another slave node to do some work, so now I&#8217;m up to a 7 node cluster! I also upgraded the ram on each node to 1GB. Still low, but much more stable since doing so.
+Please make a note that in order to get Hbase running with some real stability, I was forced to upgrade my cluster a bit. First, I moved my master onto a virtual machine, so that it was off of the "workhorse" nodes, and on a more redundant set of "hardware". Effectively, this gave me another slave node to do some work, so now I'm up to a 7 node cluster! I also upgraded the ram on each node to 1GB. Still low, but much more stable since doing so.
 
 Log into your master node, and navigate to the /hadoop directory:
 
@@ -48,7 +48,7 @@ svn co http://svn.apache.org/repos/asf/hadoop/hbase/branches/0.20 hbase-svn&lt;b
   </p>
 </blockquote>
 
-This will always be the latest and greatest code for the 0.20 branch. (The trunk is now working towards 0.21). If you would like a &#8220;release&#8221; that is not under development, then have a look at http://svn.apache.org/repos/asf/hadoop/hbase/tags/ and you can pick from previously released &#8220;snapshots&#8221; of the code. Just adjust the &#8220;svn co&#8221; command accordingly. If you have downloaded a pre-built package, then simply extract the contents to the /hadoop/hbase-<version>/ directory. Assuming all has gone well, we are ready to configure our hbase install. Navigate to the hbase/conf directory that you are currently using:
+This will always be the latest and greatest code for the 0.20 branch. (The trunk is now working towards 0.21). If you would like a "release" that is not under development, then have a look at http://svn.apache.org/repos/asf/hadoop/hbase/tags/ and you can pick from previously released "snapshots" of the code. Just adjust the "svn co" command accordingly. If you have downloaded a pre-built package, then simply extract the contents to the /hadoop/hbase-<version>/ directory. Assuming all has gone well, we are ready to configure our hbase install. Navigate to the hbase/conf directory that you are currently using:
 
 <blockquote class="code">
   <p>
@@ -88,7 +88,7 @@ export HBASE_OPTS="-XX:+HeapDumpOnOutOfMemoryError -XX:+UseConcMarkSweepGC -XX:+
   </p>
 </blockquote>
 
-Now, modify your &#8220;regionservers&#8221; file to list all of the machines you want to host regions. Think of an Hbase region as a small chunk of the data in your database. The more regionservers you have, the more data you can reliably serve. In my cluster, the regionservers are the same nodes as all of my datanodes, and all of my tasktrackers. So, essentially, the &#8220;regionservers&#8221; file should be identical to your &#8220;slaves&#8221; file from the hadoop tutorial.
+Now, modify your "regionservers" file to list all of the machines you want to host regions. Think of an Hbase region as a small chunk of the data in your database. The more regionservers you have, the more data you can reliably serve. In my cluster, the regionservers are the same nodes as all of my datanodes, and all of my tasktrackers. So, essentially, the "regionservers" file should be identical to your "slaves" file from the hadoop tutorial.
 
 Next, modify the hbase-site.xml file. The settings in this file over-write those in hbase-default.xml, so if you want to see a list of available settings to configure, then study that file, but only make changes to your hbase-site.xml. Add the following settings to hbase-site.xml:
 
@@ -100,7 +100,7 @@ Next, modify the hbase-site.xml file. The settings in this file over-write those
   </p>
 </blockquote>
 
-Please remember to replace $master$ and $slaveX$ with your master and slave host names respectively. You may have read that Hbase 0.20 now requires zookeeper, but fear not, the above configuration directives allow hbase to completely manage zookeper on it&#8217;s own, you never have to mess with it. Now, it is typically recommended to always run zookeeper on dedicated zookeeper only servers. If you are running a small cluster, then this is hardly efficient, because you want as many nodes &#8220;working&#8221; as possible. While I can&#8217;t give you recommendations of the maximum cluster size you can have before requiring dedicated zk nodes, I can tell you that my 6 slave nodes run datanode, tasktracker, regionserver, and zookeeper without too much of a problem. I would imagine that if you have over 10 nodes in your cluster, then you shouldn&#8217;t have a problem dedicating a few for zookeeper. They also recommend (maybe even require) that zookeeper runs on an odd number of machines. I don&#8217;t completely understand how zookeeper works, but basically as long as you still have more than half of your &#8220;quorum&#8221; in tact, then your cluster won&#8217;t fail. In essence, if your zk quorum has 7 nodes, you can lose 3 nodes without any adverse affects, a 35 node quorum could theoretically lose 17 nodes, and still operate. I think basically zookeeper is used to keep track of the locations of regions, so your quorum will notify any clients, and fellow regionservers where to find the data they are looking for. If zk becomes overloaded, then your regionservers can time out and crash, and potentially lose data if they haven&#8217;t flushed to disk yet. So make sure you have enough horsepower for your application. In my cluster, the hbase.zookeeper.quorum directive is simply a comma separated list of all of my slave nodes, including my master. If you have an odd number of slaves (even number counting your master), then just leave the master out of the list. If you have more than ten slaves, then consider dedicating 3 of them to zookeeper if you have problems with regionservers timing out. The logs will tell you if that is the case.
+Please remember to replace $master$ and $slaveX$ with your master and slave host names respectively. You may have read that Hbase 0.20 now requires zookeeper, but fear not, the above configuration directives allow hbase to completely manage zookeper on it's own, you never have to mess with it. Now, it is typically recommended to always run zookeeper on dedicated zookeeper only servers. If you are running a small cluster, then this is hardly efficient, because you want as many nodes "working" as possible. While I can't give you recommendations of the maximum cluster size you can have before requiring dedicated zk nodes, I can tell you that my 6 slave nodes run datanode, tasktracker, regionserver, and zookeeper without too much of a problem. I would imagine that if you have over 10 nodes in your cluster, then you shouldn't have a problem dedicating a few for zookeeper. They also recommend (maybe even require) that zookeeper runs on an odd number of machines. I don't completely understand how zookeeper works, but basically as long as you still have more than half of your "quorum" in tact, then your cluster won't fail. In essence, if your zk quorum has 7 nodes, you can lose 3 nodes without any adverse affects, a 35 node quorum could theoretically lose 17 nodes, and still operate. I think basically zookeeper is used to keep track of the locations of regions, so your quorum will notify any clients, and fellow regionservers where to find the data they are looking for. If zk becomes overloaded, then your regionservers can time out and crash, and potentially lose data if they haven't flushed to disk yet. So make sure you have enough horsepower for your application. In my cluster, the hbase.zookeeper.quorum directive is simply a comma separated list of all of my slave nodes, including my master. If you have an odd number of slaves (even number counting your master), then just leave the master out of the list. If you have more than ten slaves, then consider dedicating 3 of them to zookeeper if you have problems with regionservers timing out. The logs will tell you if that is the case.
 
 Now, if you are building from svn, then run the following command from your hbase-svn directory:
 
@@ -112,7 +112,7 @@ ant&lt;br />
   </p>
 </blockquote>
 
-This command is like &#8220;make&#8221;, but for java. It will compile the java code into .class binary files, .jar files, and even copy our config to hbase-svn/build. This new build directory is basically the same as a pre-built downloaded package, so I always link to it from /hadoop/hbase:
+This command is like "make", but for java. It will compile the java code into .class binary files, .jar files, and even copy our config to hbase-svn/build. This new build directory is basically the same as a pre-built downloaded package, so I always link to it from /hadoop/hbase:
 
 <blockquote class="code">
   <p>
@@ -134,7 +134,7 @@ cd /hadoop && ln -s hbase-&lt;version&gt;&lt;version> hbase&lt;br />
 
 Simply remember to replace hbase-<version> with your actual directory name. Please also remember that only hbase-0.20.X will run on our hadoop cluster.
 
-Next we have copy our hbase install to all of the nodes that will be running a regionserver. I wrote a handy script to do this for me, that way as I build, and rebuild hbase, I can simply run my &#8216;deploy-hbase.sh&#8217; script to spread it around my cluster:
+Next we have copy our hbase install to all of the nodes that will be running a regionserver. I wrote a handy script to do this for me, that way as I build, and rebuild hbase, I can simply run my 'deploy-hbase.sh' script to spread it around my cluster:
 
 <blockquote class="code">
   <p>
@@ -155,7 +155,7 @@ mkdir -p /hadoop/zookeeper/data && echo 'X' &gt; /hadoop/zookeeper/data/myid&lt;
   </p>
 </blockquote>
 
-It is imperative that you replace the &#8216;X&#8217; with &#8216;0&#8217;, on the first node in your quorum, &#8216;1&#8217; on the second, &#8216;2&#8217; on the third and so on. This file allows the node to identify itself in the zk quorum.
+It is imperative that you replace the 'X' with '0', on the first node in your quorum, '1' on the second, '2' on the third and so on. This file allows the node to identify itself in the zk quorum.
 
 Once all that per node work is done, you can finally start your hbase instance. From the master /hadoop/hbase directory run:
 

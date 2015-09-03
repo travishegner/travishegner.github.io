@@ -8,7 +8,7 @@ categories:
 ---
 Dear People,
 
-Being a person of influence in a child&#8217;s life, should make the parent&#8217;s job easier&#8230; not harder.
+Being a person of influence in a child's life, should make the parent's job easier, not harder.
 
 Sincerely,
 
