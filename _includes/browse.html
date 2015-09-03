@@ -3,11 +3,11 @@
     <span class="prev"><a href="{{ prevurl }}"><-- Previous</a></span>
   {% elseif page.previous.url %} 
     <span class="prev"><a href="{{ page.previous.url }}"><-- Previous</a></span>
-  {% endif %}
+  {% end if %}
     <span class="all"><a href="/all-posts/">All Posts</a></span>
   {% if nexturl %}
     <span class="next"><a href="{{ nexturl }}">Next --></a></span>
-  {% elseif page.next.url %}
+  {% else if page.next.url %}
     <span class="next"><a href="{{ page.next.url }}">Next --></a></span>
   {% endif %}
 </div>
