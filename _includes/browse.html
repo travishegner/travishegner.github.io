@@ -1,13 +1,13 @@
 <div class="browse">
   {% if prevurl %}
-    <span class="prev"><a href="{{ prevurl }}"><-- Previous</a></span>
+    <div class="prev"><a href="{{ prevurl }}"><-- Previous</a></div>
   {% else if page.previous.url %} 
-    <span class="prev"><a href="{{ page.previous.url }}"><-- Previous</a></span>
+    <div class="prev"><a href="{{ page.previous.url }}"><-- Previous</a></div>
   {% endif %}
-    <span class="all"><a href="/all-posts/">All Posts</a></span>
+    <div class="all"><a href="/all-posts/">All Posts</a></div>
   {% if nexturl %}
-    <span class="next"><a href="{{ nexturl }}">Next --></a></span>
+    <div class="next"><a href="{{ nexturl }}">Next --></a></div>
   {% else if page.next.url %}
-    <span class="next"><a href="{{ page.next.url }}">Next --></a></span>
+    <div class="next"><a href="{{ page.next.url }}">Next --></a></div>
   {% endif %}
 </div>
