@@ -2,6 +2,6 @@
 layout: default
 ---
 
-{% for post in sites.posts %}
+{% for post in site.posts %}
   {{ post.title }}
 {% endfor %}
