@@ -1,5 +1,5 @@
 ---
-title: 'Cloudera Management Server: Too Many Open Files'
+title: 'Cloudera Manager: Too Many Open Files'
 author: travis.hegner
 layout: post
 ---
