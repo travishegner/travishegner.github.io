@@ -29,3 +29,5 @@ $CMF_SUDO_CMD /bin/bash -c "nohup $SERVER_SCRIPT $CMF_SERVER_ARGS" > $SERVER_OUT
 {% endhighlight %}
 
 And cloudera manager has been running well since.
+
+[1]: http://serverfault.com/questions/359185/limits-conf-not-being-applied
