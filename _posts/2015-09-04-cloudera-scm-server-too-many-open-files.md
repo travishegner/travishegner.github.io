@@ -3,7 +3,7 @@ title: 'Cloudera Manager: Too Many Open Files'
 author: travis.hegner
 layout: post
 ---
-Working with cloudera manager 5.4.5, I recently discovered a bug in the way they handle limits on the cloudera-scm-server service. The symptoms start with the web interface of the cloudera manager being completely unresponsive when trying to access it. SSH into the host running the service, and it's java process is consuming a lot of CPU.
+Working with cloudera manager 5.4.6, I recently discovered a bug in the way they handle limits on the cloudera-scm-server service. The symptoms start with the web interface of the cloudera manager being completely unresponsive when trying to access it. SSH into the host running the service, and it's java process is consuming a lot of CPU.
 
 Executing:
 
